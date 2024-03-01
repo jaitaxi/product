@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+</head>
+    <style>
+        #data div img{
+            height: 250px;
+            width: 250px;
+            border: 2px black solid;
+        }
+        #data{
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+        .title{
+            color: black;
+        }
+    </style>
+
+<body>
+    <form id="form">
+        <input type="text" id="title" placeholder="Name of Product" required>
+        <span id="t-error"></span>
+        <br>
+        <input type="number" id="price" placeholder="Selling price" required>
+        <br>
+        <input type="url" id="img" placeholder="img" required>
+        <br>
+        <input type="submit">
+    </form>
+<hr>
+    <div id="data">
+
+    </div>
+
+</body>
+
+    <script src="./index.js"></script>
+
+</html>
